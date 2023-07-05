@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bakbak One', cursive;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #dfdfdf;
+}
+
+h1,h3{
+    color: #2e2e2e;
+}
+
+h1{
+    font-size: 128px;
+    letter-spacing: 30px;
+}
+
+.frame1,.frame2,.frame3,.frame4,.frame5{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    transform: translateX(-200%) skew(45deg);
+    animation: frame 1s linear;
+}
+
+.frame1{
+    background-color: #2D4059;
+    animation-delay: .25s;
+}
+.frame2{
+    background-color: #EA5455;
+    animation-delay: .30s;
+}
+.frame3{
+    background-color: #F07B3F;
+    animation-delay: .35s;
+}
+.frame4{
+    background-color: #FFD460;
+    animation-delay: 40s;
+}
+.frame5{
+    background-color: rgb(144, 192, 253);
+    animation-delay: .45s;
+}
+
+@keyframes frame{
+    to{
+        transform: translateX(100%) skew(0deg);
+    }
+}
